@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+.auth-body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* Dashboard Styles */
+.sidebar {
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    height: 100vh;
+    position: fixed;
+}
+
+.main-content {
+    margin-left: 250px;
+}
+
+.task-card {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+}
+
+.task-card.high-priority {
+    border-left-color: var(--danger-color);
+}
+
+.task-card.medium-priority {
+    border-left-color: var(--warning-color);
+}
+
+.task-card.low-priority {
+    border-left-color: var(--success-color);
+}
+
+.task-completed {
+    opacity: 0.7;
+    background-color: #f8f9fa;
+}
+
+.category-badge {
+    font-size: 0.7em;
+}
+
+.stats-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Gamification Styles */
+.stats-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card {
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+}
+
+/* Progress bars */
+.progress {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar {
+    background-color: #fff;
+}
