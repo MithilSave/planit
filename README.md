@@ -1,7 +1,5 @@
 # PLANIT - Productivity & Task Management App
 
-![PLANIT Banner](https://via.placeholder.com/800x200?text=PLANIT+-+Productivity+Reimagined)
-
 ## 📋 Overview
 
 PLANIT is a full-stack web application designed to help users manage tasks, categorize work, and stay motivated through gamification features. The app provides an intuitive interface for task management with rewards and progress tracking.
