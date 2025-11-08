@@ -6,7 +6,7 @@ dotenv.config();
 const dbConfig = {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '',
+    password: process.env.DB_PASSWORD || 'Mithil29',
     database: process.env.DB_NAME || 'planit_db',
     waitForConnections: true,
     connectionLimit: 10,
